@@ -29,10 +29,12 @@ a
 
 /* PRINCIPAL */
 
+/* LOGO */
+
 main
 {
     width: 100%;
-    height: 47vw;
+    height: 56vw;
     background-color: #f0f2f5;
     display: flex;
     flex-wrap: nowrap;
@@ -43,6 +45,7 @@ main
 
 #principal
 {
+    margin-top: -3.225vw;
     width: 82.25%;
     height: 65%;
     display: flex;
@@ -55,6 +58,7 @@ main
 {
     width: 57.5%;
     height: 100%;
+    margin-top: -5.5vw;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -65,22 +69,26 @@ main
 {
     width: 25vw;
     height: 25vw;
-    margin-bottom: -5.98vw;
+    margin-bottom: -7.38vw;
 }
 
 #face p
 {
     font-size: 2.185vw;
     color: #1c1e21;
+    margin-top: -2.15vw;
     padding-bottom: 9.85vw;
     padding-left: 2.24vw;
 }
+
+/* /LOGO */
+
+/* ÁREA DE LOGIN */
 
 #campos
 {
     width: 42.5%;
     height: 100%;
-    background-color: crimson;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -93,16 +101,16 @@ main
     height: 100%;
     display: flex;
     flex-wrap: nowrap;
-    flex-direction: column;
+    flex-direction: flex;
     align-items: center;
-    margin-left: -0.7vw;
-    margin-top: 2vw;
+    margin-left: 1.85vw;
+    margin-top: -0.4vw;
 }
 
 #caixa
 {
     width: 90.5%;
-    height: 100%;
+    height: 85%;
     border-radius: 0.9vw;
     border: 0.15vw solid #caccce;
     background-color: white;
@@ -113,67 +121,167 @@ main
     margin-right: 0.9vw;
 }
 
-#caixa input
-{
-    width: 92%;
-    height: 15%;
-    border: 1.5px solid #e0e2e4;
-    border-radius: 0.4vw;
-    font-size: 1.38vw;
-    padding: 0.9vw;
-}
 
-#caixa input::placeholder
-{
-    padding-left: 0.40vw;
-    color: #90959c
-}
+    /* INPUTS */
 
-#caixa input:focus
-{
-    outline: none;
-    border: 1.65px solid #2179e4;
-    border-radius: 0.4vw;
-}
+    #caixa input
+    {
+        width: 92%;
+        height: 14.75%;
+        border: 1.5px solid #e0e2e4;
+        border-radius: 0.5vw;
+        font-size: 1.38vw;
+        padding: 0.9vw;
+    }
 
-#caixa input:focus::placeholder
-{
-    color: #c2c7cc;
-}
+    #caixa input::placeholder
+    {
+        padding-left: 0.35vw;
+        color: #90959c
+    }
 
-#caixa #usuario
-{
-    margin-top: 1.25vw;
-}
+    #caixa input:focus
+    {
+        outline: none;
+        border: 1.65px solid #2179e4;
+    }
 
-#caixa #senha
-{
-    margin-top: 0.9vw;
-}
+    #caixa input:focus::placeholder
+    {
+        color: #c2c7cc;
+    }
 
-#caixa button
-{
-    width: 92%;
-    height: 14%;
-    margin-top: 1vw;
-    border: 1.5px solid #1977f3;
-    border-radius: 0.4vw;
-    color: white;
-    font-size: 1.55vw;
-    font-weight: bold;
-    background-color: #1977f3;
-}
+    #caixa #usuario
+    {
+        margin-top: 1.25vw;
+    }
 
-#caixa button::placeholder
-{
-    padding-left: -0.1;
-}
+    #caixa #senha
+    {
+        margin-top: 0.9vw;
+    }
+
+    /* /INPUTS */
+
+    /* BOTÕES */
+
+    #caixa button
+    {
+        width: 92%;
+        height: 14%;
+        margin-top: 1.2vw;
+        border: none;
+        border-radius: 0.4vw;
+        color: white;
+        font-size: 1.575vw;
+        font-weight: bold;
+        background-color: #1977f3;
+    }
+
+    #caixa button:focus
+    {
+        outline: none;
+        border: 2.6px solid #85aeff;
+    }
+
+    #caixa button::placeholder
+    {
+        padding-left: -0.1vw ;
+    }
+
+    #caixa #novaConta
+    {
+        width: 42%;
+        height: 13.75%;
+        margin-top: 2vw;
+        font-size: 1.35vw;
+        background-color: #42b62b;
+    }
+
+    #caixa #novaConta:hover
+    {
+        background-color: #36a521;
+    }
+
+    #caixa #novaConta:focus
+    {
+        border: 1.5px solid #8ab2fe;
+        background-color: #36a521;
+    }
+
+
+    /* /BOTÕES */
+
+    /* ESQUECEU A SENHA */
+
+    #caixa a
+    {
+        font-size: 1.095vw;
+        margin-top: 1.375vw;
+        color: #3e82f4;
+        text-decoration: none;
+    }
+
+    #caixa a:hover
+    {
+        text-decoration: underline;
+    }
+
+    /* /ESQUECEU A SENHA */
+
+    /* HR */
+
+    #caixa hr
+    {
+        width: 92%;
+        height: 2px;
+        border: none;
+        background-color: #e2e4e8;
+        margin-top: 1.6vw;
+    }
+
+    /* /HR */
+
+/* /ÁREA DE LOGIN */
+
+/* TEXTO */
+
+    #texto
+    {
+        text-align: center;
+    }
+
+    #texto p
+    {
+        font-size: 1.1vw;
+        margin-bottom: 2.3vw;
+        margin-right: 1.2vw;
+    }
+
+    #texto p a
+    {
+        font-size: 1.1vw;
+    }
+
+    #texto p a
+    {
+        color: black;
+        text-decoration: none;
+    }
+
+    #texto p a:hover
+    {
+        text-decoration: underline;
+    }
+
+/* /TEXTO */
 
 /* /PRINCIPAL */
 
 /* FOOTER */
 #bagulhodecima{
-    margin-left: 14vw;
+    margin-left: 13.5vw;
+    width: 73.5vw;
 }
 
 #bagulhodecima ul{
@@ -183,28 +291,73 @@ main
 }
 
 #bagulhodecima a{
+    text-decoration: none;
     display: flex;
     white-space: nowrap;
     flex-wrap: nowrap;
     justify-content: space-between;
     margin-right: 0.7%;
+    font-size: 11.5px;
     color: #737272;
 }
 
 ._sv4{
-    margin-top: 1.5vw;
+    margin-top: 2.1vw;
+    margin-bottom: 0.9vw;
     margin-right: 0.5vw;
-    font-size: 14px;
+    
     color: #737272;
 }
 
 a._sv4:visited{
     color: inherit;
-    font-size: 14px;
+    font-size: 11.5px;
 }
 a._sv4:link{
     color: inherit;
     font-size: 5px;
 }
 
+
+#bagulhodebaixo{
+    margin-top: 0.5vw;
+    display: flex;
+    margin-left: 13.5vw;
+    width: 73.5vw;
+    height: 5vw;
+    
+}
+
+#bagulhodebaixo ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+#bagulhodebaixo a{
+    text-decoration: none;
+    font-size: 11.5px;
+    margin-right: 1vw;
+    color: #8a8d91;
+}
+
+._sv3{
+    margin-right: 0.5vw;
+    font-size: 14px;
+    color: #8a8d91;
+}
+
+#aindamaisbaixomano{
+    margin-top: 1.5vw;
+    display: flex;
+    margin-left: 13.5vw;
+    width: 73.5vw;
+    height: 3vw;
+}
+#aindamaisbaixomano a{
+    text-decoration: none;
+    font-size: 11.5px;
+    margin-right: 1vw;
+    color: #737272;
+}
 /* /FOOTER */
