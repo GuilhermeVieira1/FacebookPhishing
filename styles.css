@@ -43,7 +43,7 @@ main
 
 #principal
 {
-    width: 65%;
+    width: 82.25%;
     height: 65%;
     display: flex;
     flex-wrap: nowrap;
@@ -59,22 +59,23 @@ main
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
-    background-color: blueviolet;
 }
 
 #face img
 {
-    width: 16vw;
-    height: 3.25vw;
+    width: 25vw;
+    height: 25vw;
+    margin-bottom: -5.98vw;
 }
 
 #face p
 {
-    font-size: 1.825vw;
-    margin-bottom: 9.75vw;
-    margin-top: 1.25vw;
+    font-size: 2.185vw;
     color: #1c1e21;
+    padding-bottom: 9.85vw;
+    padding-left: 2.24vw;
 }
+
 #campos
 {
     width: 42.5%;
@@ -89,17 +90,19 @@ main
 #login
 {
     width: 100%;
-    height: 80%;
+    height: 100%;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
+    margin-left: -2.75vw;
+    margin-top: 2vw;
 }
 
 #caixa
 {
-    width: 93%;
-    height: 95%;
+    width: 89%;
+    height: 100%;
     border-radius: 0.9vw;
     box-shadow: 0.2vw 0.2vw#caccce;
     background-color: white;
@@ -115,14 +118,17 @@ main
     width: 92%;
     height: 15%;
     margin-top: 1.3vw;
-    border-radius: 0.3vw;
+    border-radius: 0.4vw;
     border-color: #f6f7f8;
-    font-size: 1.08vw;
+    font-size: 1.38vw;
     padding: 0.9vw;
 }
 
-#caixa input:placeholder:focus
+#caixa input:focus::placeholder
 {
+    font-size: 1.375vw;
+    border-radius: 0.4vw;
+    border-color: #2179e4;
     color: #c2c7cc;
 }
 
