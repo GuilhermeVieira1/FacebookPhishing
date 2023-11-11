@@ -95,16 +95,16 @@ main
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    margin-left: -2.75vw;
+    margin-left: -0.7vw;
     margin-top: 2vw;
 }
 
 #caixa
 {
-    width: 89%;
+    width: 90.5%;
     height: 100%;
     border-radius: 0.9vw;
-    box-shadow: 0.2vw 0.2vw#caccce;
+    border: 0.15vw solid #caccce;
     background-color: white;
     display: flex;
     flex-wrap: nowrap;
@@ -117,31 +117,94 @@ main
 {
     width: 92%;
     height: 15%;
-    margin-top: 1.3vw;
+    border: 1.5px solid #e0e2e4;
     border-radius: 0.4vw;
-    border-color: #f6f7f8;
     font-size: 1.38vw;
     padding: 0.9vw;
 }
 
+#caixa input::placeholder
+{
+    padding-left: 0.40vw;
+    color: #90959c
+}
+
+#caixa input:focus
+{
+    outline: none;
+    border: 1.65px solid #2179e4;
+    border-radius: 0.4vw;
+}
+
 #caixa input:focus::placeholder
 {
-    font-size: 1.375vw;
-    border-radius: 0.4vw;
-    border-color: #2179e4;
     color: #c2c7cc;
+}
+
+#caixa #usuario
+{
+    margin-top: 1.25vw;
 }
 
 #caixa #senha
 {
-    margin-top: 0.8vw;
-    padding-top: 0.4vw;
+    margin-top: 0.9vw;
+}
+
+#caixa button
+{
+    width: 92%;
+    height: 14%;
+    margin-top: 1vw;
+    border: 1.5px solid #1977f3;
+    border-radius: 0.4vw;
+    color: white;
+    font-size: 1.55vw;
+    font-weight: bold;
+    background-color: #1977f3;
+}
+
+#caixa button::placeholder
+{
+    padding-left: -0.1;
 }
 
 /* /PRINCIPAL */
 
 /* FOOTER */
+#bagulhodecima{
+    margin-left: 14vw;
+}
 
+#bagulhodecima ul{
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
 
+#bagulhodecima a{
+    display: flex;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-right: 0.7%;
+    color: #737272;
+}
+
+._sv4{
+    margin-top: 1.5vw;
+    margin-right: 0.5vw;
+    font-size: 14px;
+    color: #737272;
+}
+
+a._sv4:visited{
+    color: inherit;
+    font-size: 14px;
+}
+a._sv4:link{
+    color: inherit;
+    font-size: 5px;
+}
 
 /* /FOOTER */
